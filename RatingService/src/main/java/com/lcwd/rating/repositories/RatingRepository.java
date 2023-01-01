@@ -10,8 +10,8 @@ public interface RatingRepository extends JpaRepository<Rating, Integer> {
 	
 	//Custom finder methods
 	
-	List<Rating> findByUserId(int userId);
+	List<Rating> findByUserId(String userId);
 	
-	List<Rating> findByHotelId(int hotelId);
+	List<Rating> findByHotelId(String hotelId);
 
 }

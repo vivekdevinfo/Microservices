@@ -1,17 +1,21 @@
 package com.lcwd.rating.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Rating {
-	
-	private String ratingId;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int ratingId;
 	private String userId;
 	private String hotelId;
 	private String rating;
 	private String feedback;
 	
-	public Rating(String ratingId, String userId, String hotelId, String rating, String feedback) {
+	public Rating(int ratingId, String userId, String hotelId, String rating, String feedback) {
 		super();
 		this.ratingId = ratingId;
 		this.userId = userId;
@@ -23,10 +27,10 @@ public class Rating {
 		super();
 	}
 	
-	public String getRatingId() {
+	public int getRatingId() {
 		return ratingId;
 	}
-	public void setRatingId(String ratingId) {
+	public void setRatingId(int ratingId) {
 		this.ratingId = ratingId;
 	}
 	public String getUserId() {

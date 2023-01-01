@@ -3,12 +3,12 @@ package com.lcwd.user.services.enities;
 public class Rating {
 	
 	private String ratingId;
-	private String userId;
-	private String hotelId;
+	private int userId;
+	private int hotelId;
 	private String rating;
 	private String feedback;
 	
-	public Rating(String ratingId, String userId, String hotelId, String rating, String feedback) {
+	public Rating(String ratingId, int userId, int hotelId, String rating, String feedback) {
 		super();
 		this.ratingId = ratingId;
 		this.userId = userId;
@@ -26,16 +26,16 @@ public class Rating {
 	public void setRatingId(String ratingId) {
 		this.ratingId = ratingId;
 	}
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public String getHotelId() {
+	public int getHotelId() {
 		return hotelId;
 	}
-	public void setHotelId(String hotelId) {
+	public void setHotelId(int hotelId) {
 		this.hotelId = hotelId;
 	}
 	public String getRating() {
