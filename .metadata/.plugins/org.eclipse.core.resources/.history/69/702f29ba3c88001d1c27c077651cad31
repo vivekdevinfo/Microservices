@@ -1,0 +1,11 @@
+package com.lcwd.rating.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lcwd.rating.repositories.RatingRepository;
+
+public class RatingServiceImpl {
+
+	@Autowired
+	private RatingRepository ratingRepository;
+}

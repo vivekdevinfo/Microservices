@@ -1,0 +1,5 @@
+package com.lcwd.user.services.payload;
+
+public class ApiResponse {
+
+}

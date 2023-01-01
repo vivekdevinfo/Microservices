@@ -1,0 +1,5 @@
+package com.lcwd.user.services.controller;
+
+public class UserController {
+
+}
